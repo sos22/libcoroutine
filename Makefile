@@ -1,4 +1,4 @@
-CFLAGS=-Wall
+CFLAGS=-Wall -O3
 CXXFLAGS=-Wall
 
 all: libcoroutines.a test_results
