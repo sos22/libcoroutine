@@ -141,6 +141,15 @@ initialise_coroutine(struct coroutine *cr, const char *name)
 	cr->name = name;
 }
 
+/* unused == don't generate warning if this is unused, used == emit
+   code even if it appears to be unused. */
+static void coroutine_bad_return_c(struct coroutine *cr)
+	__attribute__((unused, noreturn, used));
+static void activate_bad_coroutine(struct coroutine *src, struct coroutine *dest)
+	__attribute__((unused, noreturn, used));
+static void deactivate_bad_coroutine(struct coroutine *src, struct coroutine *dest)
+	__attribute__((unused, noreturn, used));
+
 static void coroutine_bad_return_c(struct coroutine *cr)
 {
 	/* Do it as two statements so that we get the first message
