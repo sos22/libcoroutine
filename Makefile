@@ -1,5 +1,9 @@
 all: libcoroutines.a test_results
 
+install: coroutines.h libcoroutines.a
+	install coroutines.h /usr/local/include
+	install libcoroutines.a /usr/local/lib
+
 libcoroutines.a: coroutines.o
 	ar rcs $@ $<
 
