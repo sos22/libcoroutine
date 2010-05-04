@@ -1,3 +1,6 @@
+CFLAGS=-Wall
+CXXFLAGS=-Wall
+
 all: libcoroutines.a test_results
 
 install: coroutines.h libcoroutines.a
