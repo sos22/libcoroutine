@@ -1,0 +1,3 @@
+main thread got 5
+coroutine got 53
+main thread got 6 and is exitting

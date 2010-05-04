@@ -1,0 +1,9 @@
+*.o
+*.a
+*.result
+*.cur
+test_results
+test1
+test2
+test3
+*~
